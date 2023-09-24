@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couple Photo Gallery</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Add your custom styles here */
+        .image-modal {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Couple Photo <span style="color: #ff2400;"> Gallery </span></h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatibus consequuntur iusto excepturi? Ab qui dolorem consequuntur, sint vitae nam dignissimos, praesentium magnam maiores consectetur nesciunt! Perferendis consequuntur atque suscipit.</p>
+
+        <!-- Gallery -->
+        <div class="row">
+            <!-- Add your images here -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                    class="w-100 shadow-1-strong rounded mb-4 image-modal"
+                    alt="Boat on Calm Water"
+                    data-toggle="modal" data-target="#imageModal1">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                    class="w-100 shadow-1-strong rounded mb-4 image-modal"
+                    alt="Wintry Mountain Landscape"
+                    data-toggle="modal" data-target="#imageModal2">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                    class="w-100 shadow-1-strong rounded mb-4 image-modal"
+                    alt="Yosemite National Park"
+                    data-toggle="modal" data-target="#imageModal3">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                    class="w-100 shadow-1-strong rounded mb-4 image-modal"
+                    alt="Waves at Sea"
+                    data-toggle="modal" data-target="#imageModal4">
+            </div>
+        </div>
+        <!-- Gallery -->
+
+        <!-- Add more image items here -->
+
+        <!-- Modals -->
+        <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModal1Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModal1Label">Boat on Calm Water</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                            class="w-100" alt="Boat on Calm Water">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModal2Label">Wintry Mountain Landscape</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                            class="w-100" alt="Wintry Mountain Landscape">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModal3Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModal3Label">Yosemite National Park</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                            class="w-100" alt="Yosemite National Park">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModal4Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModal4Label">Waves at Sea</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                            class="w-100" alt="Waves at Sea">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modals -->
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add your custom scripts here if needed -->
+</body>
+</html>
